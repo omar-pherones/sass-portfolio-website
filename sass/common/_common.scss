@@ -1,0 +1,72 @@
+body {
+    overflow-x: hidden;
+    font-family: $body-font;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0;
+    word-wrap: break-word;
+    font-weight: 400;
+    background-color: $bd-color-1;
+    color: $para-color;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $second-font;
+    font-weight: 500;
+    color: $main-color;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: $main-color;
+    line-height: 70px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 31.2px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: $second-font;
+    color: $main-color;
+}
+
+p {
+    font-size: 16px;
+    font-family: $body-font;
+    color: $para-color;
+    line-height: 30px;
+}
+
+.section-headding {
+    text-align: center;
+
+    h4 {
+        font-size: 22px;
+        line-height: 30px;
+        color: $second-color;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    p {
+        width: 550px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

@@ -1,0 +1,52 @@
+#portfolio {
+    padding-top: 185px;
+    margin-bottom: 165px;
+    position: relative;
+
+    .PortfolioWraper {
+        .filters {
+            text-align: center;
+            margin-top: 70px;
+            margin-bottom: 40px;
+
+            button.mixitup-control-active {
+                color: $second-color;
+            }
+
+            button {
+                font-size: 16px;
+                font-weight: 500;
+                font-family: $second-font;
+                color: $main-color;
+                transition: $transition;
+                margin-right: 50px;
+                display: inline-block;
+                border: none;
+                outline: 0;
+                background-color: transparent;
+
+                &:hover {
+                    color: $second-color;
+                }
+            }
+
+            button:last-child {
+                margin-right: 0px
+            }
+        }
+
+        .portfolioItem {
+            a {
+                display: block;
+                width: 100%;
+
+                img {
+                    height: 450px;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+
+
+}

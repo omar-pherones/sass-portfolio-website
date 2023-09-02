@@ -1,0 +1,211 @@
+#testimonial {
+    margin-bottom: 187px;
+    position: relative;
+    width: 100%;
+
+    .testimonialContainer {
+        max-width: 650px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 70px;
+
+
+
+        .testimonial-item {
+            .icon {
+                margin-bottom: 40px;
+
+                .svg {
+                    width: 65px;
+                    height: 65px;
+                    fill: $second-color;
+                }
+            }
+
+            .testimonial-text {
+                p {
+                    font-style: italic;
+                    font-size: 19px;
+                }
+            }
+
+            .testimoniaInfo {
+                margin-top: 40px;
+                @include flex-container(center);
+
+                .avatar {
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        margin-right: 30px;
+                    }
+
+                }
+
+                .details {
+                    h4 {
+                        font-size: 23px;
+                        color: $main-color;
+                        margin-bottom: 5px;
+                        font-weight: 500;
+                    }
+
+                    h6 {
+                        font-size: 16px;
+                        font-family: $body-font;
+                        color: $para-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -50px;
+
+        li {
+            display: inline-block;
+            margin: 0px 8px;
+
+            button {
+                border: none;
+                font-size: 0px;
+                width: 15px;
+                height: 15px;
+                border-radius: 60%;
+                border: 2px solid $second-color;
+            }
+        }
+    }
+
+    .slick-dots {
+        .slick-active {
+            button {
+                background-color: $second-color;
+                border-color: transparent;
+            }
+        }
+    }
+
+    .bg-avatar {
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .avatar-1 {
+            left: 3%;
+            bottom: 17%;
+        }
+
+        .avatar-2 {
+
+            left: 10%;
+            top: 37%;
+            height: 70px;
+            width: 70px;
+
+        }
+
+        .avatar-3 {
+            left: 18%;
+            bottom: 22%;
+
+        }
+
+        .avatar-4 {
+            width: 30px !important;
+            height: 30px !important;
+            left: 20%;
+            bottom: 0%;
+        }
+
+        .avatar-5 {
+            right: 40px;
+            bottom: 31%;
+        }
+
+        .avatar-6 {
+            width: 70px;
+            height: 70px;
+            right: 17%;
+            bottom: 20%;
+        }
+
+        .avatar-7 {
+            right: 10%;
+            top: 37%;
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    .circle {
+        position: absolute;
+        animation: circule 4s linear infinite alternate-reverse;
+        border-radius: 50%;
+    }
+
+    @keyframes circule {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.2);
+        }
+    }
+
+    .circle-1 {
+        left: 19%;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        border: 4px solid $color-3;
+    }
+
+    .circle-2 {
+        width: 20px;
+        height: 20px;
+        background-color: $green-color;
+        left: 5%;
+        bottom: 40%;
+    }
+
+    .circle-3 {
+        width: 20px;
+        height: 20px;
+        background-color: $yellow-color;
+        left: 12%;
+        bottom: 15%;
+    }
+
+    .circle-4 {
+        width: 60px;
+        height: 60px;
+        background-color: $yellow-color;
+        top: 35%;
+        right: 22%;
+    }
+
+    .circle-5 {
+        width: 50px;
+        height: 50px;
+        border: 5px solid $green-color;
+        bottom: 25%;
+        right: 10%;
+    }
+
+    .circle-6 {
+        width: 20px;
+        height: 20px;
+        background-color: $color-3;
+        bottom: 8%;
+        right: 7%;
+    }
+}

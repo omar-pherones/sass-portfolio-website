@@ -1,0 +1,67 @@
+body {
+    font-family: Arial;
+    background: #eee;
+}
+
+.barfiller {
+    width: 100%;
+    height: 8px;
+    background: #e7e5f1;
+    border: none;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    /* box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5); */
+    -moz-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, .5);
+}
+
+.barfiller .fill {
+    display: block;
+    position: relative;
+    width: 0px;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+    height: 8px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: rgb(247, 80, 35) !important;
+}
+
+#bar2.barfiller .fill {
+    background-color: rgb(28, 190, 89) !important;
+}
+
+#bar3.barfiller .fill {
+    background-color: rgb(128, 103, 240) !important;
+}
+
+.barfiller .tipWrap {
+    display: none;
+}
+
+.barfiller .tip {
+    margin-top: -36px;
+    padding: 2px 4px;
+    font-size: 11px;
+    color: #f75023;
+    left: 0px;
+    font-size: 16px;
+    position: absolute;
+    font-family: jost, sans-serif;
+    font-weight: 500;
+    z-index: 2;
+    background: transparent;
+}
+
+.barfiller .tip:after {
+    border: none;
+    border-color: rgba(0, 0, 0, .8) transparent;
+    border-width: 6px 6px 0 6px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 9px;
+    top: 100%;
+    z-index: 9
+}

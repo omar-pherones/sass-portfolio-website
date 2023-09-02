@@ -1,0 +1,117 @@
+// banner start here
+#banner {
+    padding-top: 170px;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 1;
+    background-image: url(/images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 190px;
+    .banner-left-text {
+        h1 {
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: $second-color;
+        }
+        h4 {
+            margin-bottom: 25px;
+            .span-1 {
+                color: $green-color;
+            }
+            .span-2 {
+                color: $purple-color;
+            }
+        }
+        .banner-button {
+            margin-top: 30px;
+            @include flex-container(flex-start);
+            .banner-btn {
+                @include primary_btn(9px 35px 8px);
+                color: #fff;
+                &::before {
+                    height: 100%;
+                }
+                &:hover::before {
+                    height: 0%;
+                }
+                &:hover {
+                    color: $main-color;
+                }
+            }
+            .social-link {
+                padding-left: 30px;
+                @include flex-container(flex-start);
+                li {
+                    margin: 0px 8px;
+                }
+                a {
+                    transition: all 0.4s ease;
+                    font-size: 15px;
+                    transition: $transition;
+                    color: $main-color;
+                }
+            }
+        }
+    }
+    .banner-right {
+        position: relative;
+        .banner-image {
+            max-width: 322px;
+            text-align: center;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+        .anim_moveBottom {
+            animation: anim_moveBottom 4s linear 0s infinite alternate;
+        }
+        @keyframes anim_moveBottom {
+            0% {
+                transform: translateY(0px);
+            }
+            100% {
+                transform: translateY(20px);
+            }
+        }
+        .skills {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            box-shadow: 24px 0 72px rgb(54 32 152 / 30%);
+            .svg {
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .illustrator {
+            top: 55px;
+            left: 65px;
+            position: absolute;
+            background-color: $illustrator-bg;
+            .svg {
+                fill: $color-1;
+            }
+        }
+        .photoshop {
+            top: 115px;
+            right: 95px;
+            position: absolute;
+            background-color: $photoshop-bg;
+            .svg {
+                fill: $color-2;
+            }
+        }
+        .figma {
+            bottom: 0px;
+            left: 39%;
+            position: absolute;
+            background-color: $white-color;
+        }
+    }
+}

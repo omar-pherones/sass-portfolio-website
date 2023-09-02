@@ -1,0 +1,114 @@
+#contact {
+    padding-top: 190px;
+    margin-bottom: 200px;
+    position: relative;
+
+    .contactWraper {
+        padding-top: 70px
+    }
+
+    .contactInfo {
+        .contact_item {
+            @include flex-container(start);
+
+            .details {
+                a {
+                    color: $para-color;
+                }
+            }
+
+            .icon {
+                width: 88px;
+                height: 88px;
+                line-height: 88px;
+                text-align: center;
+                border-radius: 50%;
+                margin-right: 30px;
+
+                i {
+                    font-size: 20px;
+                    color: $second-color;
+                }
+            }
+
+            .location {
+                background-color: $orange-color;
+            }
+
+            .email {
+                background-color: $green-color-variants;
+
+                i {
+                    color: $green-color;
+                }
+
+            }
+
+            .phone {
+                background-color: $purple-color-variants;
+
+                i {
+                    color: $purple-color;
+                }
+            }
+        }
+
+
+    }
+
+    .contactForm {
+        form {
+            input {
+                height: 55px;
+                border-radius: 12px;
+                padding: 20px;
+                font-size: 17px;
+                font-family: inherit;
+                border: 2px solid $border-color;
+                color: $para-color;
+
+                &:focus {
+                    border: 2px solid $border-color;
+                    box-shadow: none;
+                }
+            }
+
+            textarea {
+                width: 100%;
+                resize: none;
+                font-size: 17px;
+                font-family: inherit;
+                color: $para-color;
+                padding: 20px;
+                border-radius: 12px;
+                border: 2px solid $border-color;
+
+                &:focus {
+                    box-shadow: none;
+                    border: 2px solid $border-color;
+                    outline: 0;
+                }
+            }
+
+            .submitBtn {
+                a {
+                    @include primary_btn(9px 35px);
+                    color: $white-color;
+
+                    &::before {
+                        height: 100%;
+                    }
+
+                    &:hover::before {
+                        height: 0;
+                        background-color: transparent;
+                    }
+
+                    &:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}

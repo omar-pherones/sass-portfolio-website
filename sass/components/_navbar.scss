@@ -1,0 +1,46 @@
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    padding: 20px 0px;
+    transition: $transition;
+    z-index: 9999;
+    img {
+        width: 110px;
+    }
+    .navbar-nav {
+        a {
+            font-size: 16px;
+            font-family: $second-font;
+            font-weight: 500;
+            color: $main-color;
+            transition: all 400ms ease;
+            margin-right: 25px;
+            &:last-child {
+                margin-right: 0px;
+            }
+            &:hover {
+                color: $second-color;
+            }
+        }
+        .custome_btn {
+            @include primary_btn(5px 25px);
+            &:hover {
+                color: $white-color;
+            }
+            &:hover::before {
+                height: 100%;
+            }
+        }
+    }
+}
+.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.706);
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    padding: 15px 0px !important;
+}

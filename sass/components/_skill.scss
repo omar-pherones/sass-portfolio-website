@@ -1,0 +1,33 @@
+#skill {
+    position: relative;
+
+    .skill-left {
+        padding-right: 100px;
+
+        .section-headding {
+            text-align: left;
+
+            h2 {
+                font-size: 38px;
+            }
+        }
+
+        p {
+            margin-bottom: 50px;
+        }
+
+        .skillContainer {
+            h6 {
+                color: $main-color;
+                padding-bottom: 15px;
+                font-size: 18px;
+                font-family: $second-font;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .skill-right {
+        padding-left: 100px;
+    }
+}

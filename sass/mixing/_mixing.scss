@@ -1,0 +1,36 @@
+@mixin primary_btn($padding) {
+    border: 2px solid #f75023;
+    border-radius: 50px;
+    font-family: $second-font;
+    font-weight: 500;
+    font-size: 16px;
+    color: $main-color;
+    padding: $padding;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: $transition;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: '';
+        background-color: #f75023;
+        bottom: 0;
+        left: 0;
+        height: 0;
+        width: 100%;
+        z-index: -1;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+}
+
+@mixin flex-container($justify) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: $justify;
+}

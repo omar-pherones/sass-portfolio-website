@@ -1,0 +1,22 @@
+#footer {
+    background-color: $bd-color-2;
+    padding: 60px;
+
+    .footerWraper {
+
+        a {
+            color: $para-color;
+        }
+
+        ul {
+            text-align: right;
+
+
+            li:not(:last-child) {
+                margin-right: 30px;
+
+            }
+
+        }
+    }
+}

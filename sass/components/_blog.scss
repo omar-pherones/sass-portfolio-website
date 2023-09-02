@@ -1,0 +1,94 @@
+#blog {
+    position: relative;
+    padding-top: 185px;
+    margin-bottom: 160px;
+    width: 100%;
+
+    .section-headding {
+        width: 550px;
+        text-align: center;
+        margin: 0 auto;
+
+        h3 {
+            font-size: 38px;
+            line-height: 1.25;
+        }
+    }
+
+    .BlogWrapper {
+        padding-top: 70px;
+
+        .singleBlog {
+            position: relative;
+            transition: $transition;
+            border-radius: 15px;
+            overflow: hidden;
+
+
+            .blogImage {
+                overflow: hidden;
+                transition: $transition;
+                cursor: pointer;
+                width: 100%;
+                border-radius: 15px;
+
+                img {
+                    width: 100%;
+                    transition: $transition;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .postDate {
+                position: absolute;
+                top: 15px;
+                right: 10px;
+                background-color: $green-color;
+                color: $white-color;
+                border-radius: 15px;
+                text-align: center;
+                padding: 15px 15px;
+
+                span {
+                    font-size: 20px;
+                    font-family: $second-font;
+                    font-weight: 500;
+                }
+            }
+
+            .blogDesc {
+                padding: 15px 0px;
+
+                span {
+                    color: $second-color;
+                    margin-bottom: 10px;
+                }
+
+                h3 {
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+    }
+
+
+    .blogShap {
+        position: absolute;
+    }
+
+    .image_1 {
+        left: 46px;
+        top: 30%;
+
+    }
+
+    .image_2 {
+        top: 0;
+        right: 0;
+    }
+}

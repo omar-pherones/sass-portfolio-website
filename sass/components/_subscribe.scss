@@ -1,0 +1,76 @@
+#subscribe {
+    .subscribeWraper {
+        background: url(/images/dots.jpg) no-repeat center center/cover;
+        position: relative;
+        z-index: 2;
+        padding: 83px 90px 86px 90px;
+        border-radius: 12px;
+        color: $white-color;
+
+        &::after {
+            border-radius: 15px;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(128, 103, 240, .92);
+            z-index: -1;
+
+        }
+
+        .subscribeLeft {
+            h4 {
+                font-size: 22px;
+                color: $white-color;
+            }
+
+            h2 {
+                color: $white-color;
+                margin: 10px 0px;
+
+            }
+
+            p {
+                color: $white-color;
+
+            }
+        }
+
+        .subscriform {
+          
+            form {
+                position: relative;
+
+                input {
+                    height: 70px;
+                    color: $purple-color;
+                    width: 100%;
+                    border-radius: 12px;
+                    background-color: $white-color;
+                    padding: 10px;
+                }
+
+                button {
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    height: 70px;
+                    border-top-right-radius: 12px;
+                    border-bottom-right-radius: 12px;
+                    border: none;
+                    outline: 0;
+                    color: $white-color ;
+                    font-family: $second-font;
+                    font-size: 18px;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    background-color: $second-color;
+                    padding: 0px 35px;
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+#partners {
+    position: relative;
+
+    .partner-shap-image {
+        position: absolute;
+        top: -37%;
+        width: 100%;
+        left: 0;
+        height: 100%;
+    }
+
+    .partner-image {
+        width: 270px;
+        height: 180px;
+        border: 2px solid $border-color;
+        text-align: center;
+        line-height: 180px;
+
+        img {
+            max-width: 88%;
+            text-align: center;
+            opacity: 0.5;
+            transition: $transition;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

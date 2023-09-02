@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+input {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+}
+input:focus {
+    box-shadow: none;
+    border: none;
+    outline: 0;
+}
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+ul,
+li {
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+}
+button:focus,
+.btn.focus,
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+p,
+ul,
+ol,
+span {
+    margin: 0px;
+    padding: 0px;
+}
